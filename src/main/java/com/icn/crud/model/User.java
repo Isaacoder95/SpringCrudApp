@@ -2,26 +2,52 @@ package com.icn.crud.model;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 /**
  * @author isaac
  *
  */
+@Entity
+@Table(name = "users")
 public class User implements Serializable {
-
-	private String Name;
+	@Id
+	@Column
+	@GeneratedValue (strategy = GenerationType.IDENTITY)
+	private int id;
+	@Column
+	private String name;
+	@Column
 	private String secondName;
+	@Column
 	private String secondLastName;
+	@Column
 	private String emai;
+	@Column
 	private String mobile;
-	private String roll;
+	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
 
 	public String getName() {
-		return Name;
+		return name;
 	}
 
 	public void setName(String name) {
-		Name = name;
+		this.name = name;
 	}
+
+	private String roll;
 
 	public String getSecondName() {
 		return secondName;
