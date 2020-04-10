@@ -18,7 +18,7 @@ import com.icn.repositories.UsersService;
 
 @RestController
 public class SpringCrudController {
-	@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
+	//@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
 	@RestController
 	@RequestMapping({"/personas"})
 
