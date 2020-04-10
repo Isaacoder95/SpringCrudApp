@@ -1,6 +1,6 @@
 # SpringCrudApp
 CRUD Angular SPA (backend project).
+Maven project.
+Need a Mysql BD and set the configuration in application.properties file (your configuration).
 
-Need a Mysql BD , Table for modify the configuration in application.properties(your aplication).
-
-Powered by. Isaac C.
+Powered by. Isaac Cerna.
